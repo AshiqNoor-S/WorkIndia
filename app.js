@@ -5,6 +5,9 @@ const mysql = require('mysql2/promise');
 const app = express();
 app.use(bodyParser.json());
 
+const JWT_SECRET = 'JWT_TOKEN';
+const ADMIN_API_KEY = 'ADMIN_KEY';
+
 const dbConfig = {
     host: 'localhost',
     user: 'zoomcar',
